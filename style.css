@@ -1,0 +1,477 @@
+/* styles.css */
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    margin: 0;
+}
+
+/* Top Navbar */
+.top_navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 0.9em;
+}
+
+.top_navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.top_navbar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.top_navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Main Navbar */
+.main_navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.main_navbar .logo img {
+    width: 100px;
+    margin-left: 50%;
+    margin-top: 10%;
+}
+
+.main_navbar .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.main_navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.main_navbar a:hover {
+    color: #007BFF;
+}
+
+.main_navbar li {
+    cursor: pointer;
+}
+
+/* Start Section */
+.start {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background: linear-gradient(to bottom, #e0f7fa, #fff);
+}
+
+.start-heading h3 {
+    color: #007BFF;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.start-heading h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    line-height: 1.3;
+}
+
+.start-heading button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.start-heading button:hover {
+    background-color: #0056b3;
+}
+
+.start-photo img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+/* Appointment Section */
+.appointment-heading {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.appointment-heading h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+.appointment-heading button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.appointment-heading button:hover {
+    background-color: #0056b3;
+}
+
+/* Experience Section */
+.experience {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #e3f2fd;
+}
+
+.experience_content {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.experience_content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+.experience_content p {
+    margin-bottom: 15px;
+}
+
+.experience_content button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.experience_content button:hover {
+    background-color: #0056b3;
+}
+
+.experience_content ul{
+    display: flex;
+    margin-block-start: 3%;
+    column-gap: 5%;
+}
+.experience_image img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+/* Services Section */
+.Services {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 20px;
+    background-color: #fff;
+    gap: 20px;
+}
+
+.Services div {
+    text-align: center;
+    flex: 1;
+}
+
+.Services h3 {
+    margin: 15px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.Services p {
+    color: #666;
+}
+
+/* All Brand Section */
+.all_brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.all_brand_content {
+    flex: 1;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.all_brand_content h2 {
+    font-size: 2em;
+    color: #007BFF;
+    margin-bottom: 15px;
+}
+
+.all_brand_content table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+.all_brand_content th {
+    text-align: left;
+    padding: 10px;
+    color: #333;
+}
+
+.all_brand_image img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+/* Auto Service Section */
+.auto_service {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.auto_service h2 {
+    font-size: 2em;
+    color: #007BFF;
+    margin-bottom: 15px;
+}
+
+.auto_service p {
+    margin-bottom: 30px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.auto_service .card {
+    display: inline-block;
+    width: calc(25% - 20px);
+    margin: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.auto_service .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.auto_service .card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.auto_service .container {
+    padding: 15px;
+}
+
+.auto_service .container h4 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.auto_service .container p {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.auto_service button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.auto_service button:hover {
+    background-color: #0056b3;
+}
+
+/* Review Section */
+.review {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e3f2fd;
+}
+
+.review h3 {
+    font-size: 1.8em;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.review h4 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.review p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+}
+
+.mySlides {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mySlides q {
+    font-style: italic;
+    color: #555;
+    font-size: 1.1em;
+}
+
+.mySlides .author {
+    margin-top: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    margin-top: -22px;
+    color: #007BFF;
+    font-weight: bold;
+    font-size: 1.5em;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    transition: background-color 0.3s ease;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    right: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+.dot-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #007BFF;
+}
+
+/* Responsive Design */
+/* @media (max-width: 768px) {
+    .auto_service .card {
+        width: calc(50% - 20px);
+    }
+
+    .review h3,
+    .review h4 {
+        font-size: 1.2em;
+    }
+
+    .slideshow-container {
+        width: 90%;
+    }
+
+    .mySlides {
+        font-size: 0.9em;
+    }
+} */
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main_navbar .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .start,
+    .experience,
+    .all_brand {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .start-photo img,
+    .experience_image img,
+    .all_brand_image img {
+        margin: 20px 0;
+    }
+}
